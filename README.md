@@ -62,7 +62,7 @@ Below is a comparative breakdown of top commercial DBaaS and managed cloud relat
 
 ## 🔓 Open-Source GitHub Projects
 
-Curated open-source relational database management systems (RDBMS) sorted descending by GitHub Stars_Count:
+Curated open-source relational database management systems (RDBMS) sorted descending by GitHub_Stars_Count:
 
 | 📦 Repo | 📝 Description | ⭐ GitHub_Stars |
 | :--- | :--- | :--- |
