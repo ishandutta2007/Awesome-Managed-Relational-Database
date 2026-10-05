@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117" />
+      <stop offset="50%" stop-color="#161b22" />
+      <stop offset="100%" stop-color="#090d11" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#21262d" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#161b22" stop-opacity="0.6" />
+    </linearGradient>
+    
+    <!-- Animated Glow Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Base Styling & CSS Animations -->
+  <style>
+    .title-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 800; font-size: 42px; fill: #ffffff; }
+    .subtitle-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 500; font-size: 19px; fill: #94a3b8; }
+    .badge-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 13px; fill: #38bdf8; }
+    
+    /* Dynamic floating particles/elements */
+    @keyframes float1 { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-12px); } }
+    @keyframes float2 { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(10px); } }
+    @keyframes pulseGlow { 0%, 100% { opacity: 0.3; } 50% { opacity: 0.7; } }
+    
+    .floating-card-1 { animation: float1 6s ease-in-out infinite; }
+    .floating-card-2 { animation: float2 7s ease-in-out infinite; }
+    .pulse-bg { animation: pulseGlow 4s ease-in-out infinite; }
+  </style>
+
+  <!-- Background -->
+  <rect width="1200" height="320" rx="16" fill="url(#bgGlow)" />
+  
+  <!-- Subtle Grid Lines Background -->
+  <path d="M0 80 H1200 M0 160 H1200 M0 240 H1200 M300 0 V320 M600 0 V320 M900 0 V320" stroke="#30363d" stroke-width="1" stroke-opacity="0.3" />
+
+  <!-- Animated Glowing Dynamic Background Elements (Kept at back/sides) -->
+  <circle cx="1050" cy="80" r="140" fill="#818cf8" class="pulse-bg" filter="url(#glow)" opacity="0.25" />
+  <circle cx="150" cy="260" r="100" fill="#38bdf8" class="pulse-bg" filter="url(#glow)" opacity="0.2" />
+
+  <!-- Floating Dynamic Tech Pills (Positioned around right side so text stays clear) -->
+  <g class="floating-card-1">
+    <rect x="850" y="60" width="280" height="60" rx="12" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.4" />
+    <text x="870" y="95" font-family="sans-serif" font-size="14" fill="#e2e8f0" font-weight="600">⚡ Serverless Postgres &amp; MySQL</text>
+  </g>
+
+  <g class="floating-card-2">
+    <rect x="890" y="145" width="250" height="60" rx="12" fill="url(#cardGrad)" stroke="#818cf8" stroke-width="1" stroke-opacity="0.4" />
+    <text x="910" y="180" font-family="sans-serif" font-size="14" fill="#e2e8f0" font-weight="600">🌐 Distributed SQL Engines</text>
+  </g>
+
+  <g class="floating-card-1">
+    <rect x="820" y="230" width="270" height="55" rx="12" fill="url(#cardGrad)" stroke="#c084fc" stroke-width="1" stroke-opacity="0.4" />
+    <text x="840" y="263" font-family="sans-serif" font-size="14" fill="#e2e8f0" font-weight="600">☁️ Cloud Database Services</text>
+  </g>
+
+  <!-- Foreground Title and Main Content Area (Unobstructed & High Contrast) -->
+  <g transform="translate(60, 0)">
+    <!-- Top Pill Badge -->
+    <rect x="0" y="55" width="270" height="30" rx="15" fill="#1e293b" stroke="#38bdf8" stroke-width="1" />
+    <text x="15" y="75" class="badge-text">⚡ CURATED DATABASE ECOSYSTEM</text>
+
+    <!-- Main Title -->
+    <text x="0" y="140" class="title-text">Awesome Managed Relational Database</text>
+    
+    <!-- Accent Bar under title -->
+    <rect x="0" y="155" width="550" height="5" rx="2.5" fill="url(#accentGrad)" />
+
+    <!-- Subtitle -->
+    <text x="0" y="200" class="subtitle-text">Managed SQL Services • Serverless Postgres • Distributed SQL Databases</text>
+    <text x="0" y="230" class="subtitle-text">Production-Grade SaaS Platforms &amp; Open-Source Projects</text>
+  </g>
+</svg>
