@@ -1,5 +1,110 @@
-# Awesome-Managed-Relational-Database
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Managed Relational Database Banner" width="100%" />
+</p>
 
-# Awesome-Managed-Relational-Database
+# 🚀 Awesome Managed Relational Database 🗄️
 
-Awesome-Managed-Relational-DatabaseCurated List of SaaS Products & Open-Source GitHub ProjectsFocused on Managed SQL, Serverless Postgres, Distributed SQL & Cloud Database ServicesLast updated: October 2026This repository tracks notable SaaS platforms and open-source projects for Managed Relational Databases. These tools help developers and organizations run production-grade relational databases without managing servers, backups, or replication—covering managed SQL services, serverless Postgres, and distributed SQL databases.Examples include Azure SQL Database, Amazon RDS, Google Cloud SQL, Amazon Aurora, Supabase, Neon, PlanetScale, CockroachDB Cloud, Timescale, and Aiven (the category leaders).Open-source emphasis: The open-source relational database ecosystem is exceptionally mature and production-proven. PostgreSQL and MySQL remain the two most widely deployed open-source RDBMS globally, with PostgreSQL widely regarded as the most advanced open-source database, matching commercial offerings in features and reliability -7-13. CockroachDB brings distributed SQL with PostgreSQL wire compatibility and Spanner-inspired architecture -11. TiDB delivers MySQL-compatible HTAP with horizontal scaling -19. Neon separates storage and compute for true serverless Postgres -2. This section documents these production-grade solutions.📖 Table of Contents☁️ SaaS/Hosted Platforms🔓 Open-Source GitHub Projects🤝 How to Contribute⚠️ Disclaimer☁️ SaaS/Hosted Platforms📊 Market Context: The global managed relational database market is estimated at ~$30B in 2026**, growing toward **~$70B by 2032. The sector is moderately concentrated — AWS RDS and Azure SQL Database dominate the hyperscaler tier, Amazon Aurora leads cloud-native databases, and a new generation of serverless platforms (Supabase, Neon) disrupts the mid-market. Pricing varies dramatically: Azure SQL Basic starts at ~$5/month** for very small workloads -8, AWS RDS db.t4g.micro starts at **~$12/month -8, Google Cloud SQL db-f1-micro at ~$9/month** -8, and **Oracle Cloud Always Free** provides **1 OCPU + 20 GB storage forever** -8. **Serverless platforms** offer usage-based pricing: **Supabase Pro** at **$25/month with 8 GB database -9, Neon Launch at $0.106/CU-hour** with **100 CU-hours free monthly** -2-9, **PlanetScale** starting at **~$5/month after eliminating its free tier -10-16, and CockroachDB Serverless with pay-per-request pricing -11. Critical lifecycle notice: CockroachDB closed its free Basic plan to new deployments on September 15, 2026 -16. PlanetScale killed its free Hobby tier in 2024 -4-10. No single vendor holds a winner-take-all position.PlatformDescriptionPricing (Starting Tier)Free Tier LimitsCompany SizeMicrosoft Azure SQL DatabaseMicrosoft's managed SQL Server. DTU-based or vCore-based pricing with serverless and hyperscale options.Basic: ~$5/month for very small workloads -8. Serverless: Pay per vCore-second.Azure free account: $200 credit for 30 days + 12 months of free services. No perpetual free tier for Azure SQL.~$281B revenue (Microsoft FY2025)Amazon RDSAWS's managed relational database service. Supports PostgreSQL, MySQL, MariaDB, Oracle, SQL Server, and Db2.db.t4g.micro: ~$12/month** -8. **db.m5.xlarge**: **~$280/month -8.AWS Free Tier: 750 hours/month of db.t2.micro/db.t3.micro for 12 months (new accounts) -14.~$638B revenue (Amazon FY2025)Amazon AuroraAWS's cloud-native relational database. MySQL and PostgreSQL compatible with 5x throughput over standard MySQL.db.t4g.medium: $59.86/month** (2 vCPU, 4 GiB) -2. **Aurora Serverless v2**: **$0.12/ACU-hour -9.Aurora PostgreSQL joined AWS Free Tier (March 2026) -16. $200 credits for new accounts -2.~$638B revenue (Amazon FY2025)Google Cloud SQLGoogle's managed MySQL, PostgreSQL, and SQL Server. Automatic backups, failover, and read replicas.db-f1-micro: ~$9/month** -8. **db-n1-standard-4**: **~$260/month -8.Google Cloud Free Tier: $300 credit for 90 days -14. No perpetual free tier for Cloud SQL.~$350B revenue (Alphabet FY2025)SupabaseOpen-source Firebase alternative with dedicated PostgreSQL per project. Auth, storage, realtime, and edge functions included.Pro: $25/month** (2 vCPU, 1 GiB) -2. **Team**: **$599/month with SOC 2 -9.Free: 2 projects, 500 MB database, 50k MAU, projects pause after 7 days inactivity -9.Private (~$2B valuation est.)NeonServerless PostgreSQL with separated storage and compute. Instant branching (Git-like) and scale-to-zero. Acquired by Databricks (May 2025) -2.Launch: $0.106/CU-hour** + **$0.35/GB-month storage, $5/month minimum** -9. **Scale**: **$0.222/CU-hour -9.Free: 100 CU-hours/month, 0.5 GB storage per project, up to 100 projects -2-15.Part of Databricks (~$3.5B revenue est.)PlanetScaleServerless MySQL-compatible database built on Vitess. Git-like schema branching and zero-downtime migrations.~$5/month** after free tier elimination -10. **Scaler Pro**: **$27.50/month -3.No free tier — killed in 2024 -4-10.$3.9M revenue (2024), $105M raised -4-17CockroachDB CloudDistributed SQL with PostgreSQL wire compatibility. Spanner-inspired architecture for global scale.Serverless: Pay-per-request -11. Dedicated: $0.18/month starting -3.Free Basic plan closed to new deployments September 15, 2026 -16. Existing free users retained.$5B valuation, $633M raised -11Timescale CloudPostgreSQL for time-series and analytics. Built on TimescaleDB extension.$30/month starting -3. 30-day trial only -10.No perpetual free tier — 30-day trial only -10.Private (Timescale)AivenFully managed open-source databases. PostgreSQL, MySQL, Redis, Kafka, and more.Usage-based with $100 credit for new accounts.Genuinely forever-free: 1 GB single node, powers off when idle -10.Private (~$500M+ valuation est.)🔓 Open-Source GitHub ProjectsRepoDescriptionStarsPostgreSQL — The world's most advanced open-source relational database. BSD license — free to use, modify, and distribute without open-sourcing derivatives -13. ACID-compliant with MVCC and Write-Ahead Logging for extreme consistency -7. 35+ years of active development. Extensible with PostGIS, TimescaleDB, pgvector, and more. Global community with strong Japanese and European user groups -13.https://img.shields.io/github/stars/postgres/postgres?style=social&color=white~18,000MySQL — The world's most popular open-source database. GPL or commercial license -13. Powers the LAMP stack and the majority of web applications. High performance and reliability with extensive documentation and community support -7-13.https://img.shields.io/github/stars/mysql/mysql-server?style=social&color=white~11,000MariaDB — MySQL's community-driven fork. Guaranteed to stay open source -7. Adds XtraDB storage engine and performance improvements -7. Drop-in MySQL replacement with active development. GPL-2.0.https://img.shields.io/github/stars/MariaDB/server?style=social&color=white~6,000CockroachDB — Distributed SQL with PostgreSQL wire compatibility. Spanner-inspired architecture built by ex-Google engineers -11. Automatic geographic distribution, multi-active availability, and automated failover. Apache-2.0 (BSL for enterprise). IBM OEM partnership for hybrid cloud deployments -11.https://img.shields.io/github/stars/cockroachdb/cockroach?style=social&color=white~30,000TiDB — Open-source distributed HTAP database. MySQL-compatible with horizontal scaling and strong consistency -19. OLTP + OLAP in one system. Apache-2.0. Used by companies requiring real-time analytics on transactional data.https://img.shields.io/github/stars/pingcap/tidb?style=social&color=white~37,000SQLite — The most deployed database in the world. Serverless, zero-configuration, self-contained embedded database -19. Public domain. Used in every smartphone, browser, and countless embedded systems.https://img.shields.io/github/stars/sqlite/sqlite?style=social&color=white~7,000Firebird — Enterprise-grade open-source RDBMS. Memory-efficient and lightweight -13. MPL/IPL/IDPL licenses — free for commercial and non-commercial use -13. Easy installation and management. Active development since 2000.https://img.shields.io/github/stars/FirebirdSQL/firebird?style=social&color=white~1,500Additional open-source options worth exploring:RepoDescriptionApache Derby — Java-based embedded relational database from IBM Cloudscape. Apache-2.0 -13.openGauss — Huawei's open-source relational database. High performance and availability, significant share in Chinese market -19.rqlite — Lightweight distributed relational database built on SQLite. Easy to deploy and maintain -19.YugabyteDB — Distributed SQL with PostgreSQL compatibility. Spanner-inspired architecture. Apache-2.0.🤝 How to ContributeFork the repo.Add/edit entries in README.md (follow existing format).Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.Submit PR with a short explanation.Star the repo if you find it useful!⚠️ DisclaimerThis is a community-curated list — not exhaustive and not an endorsement.Managed relational databases handle sensitive application data; ensure proper security configuration, encryption, and compliance with data protection regulations.Critical lifecycle notices: CockroachDB closed its free Basic plan to new deployments on September 15, 2026 -16. PlanetScale killed its free Hobby tier in 2024 — cheapest plan is now ~$5/month -4-10. Timescale offers a 30-day trial only — no perpetual free tier -10. Aiven's free tier powers off when idle -10.Open-source reality: The open-source ecosystem for relational databases is exceptionally mature and production-proven. PostgreSQL and MySQL are the two most widely deployed open-source RDBMS globally, with PostgreSQL matching commercial databases in features and reliability -7-13. CockroachDB and TiDB bring distributed SQL to open source. SQLite is the most deployed database in the world -19. However, commercial platforms (Azure SQL, Amazon RDS, Google Cloud SQL) provide managed infrastructure, automated backups, and enterprise SLAs that open-source self-hosting requires significant operational investment to match. The open-source path is genuinely viable for organizations with strong database engineering capacity.Made for backend engineers, database administrators, platform teams, and application developers.Let's make managed relational databases more open, transparent, and accessible.
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License" />
+  <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome" />
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+> 🌟 **A Curated List of SaaS Products & Open-Source GitHub Projects**
+> ⚡ **Focused on Managed SQL, Serverless Postgres, Distributed SQL & Cloud Database Services**
+
+📅 **Last updated:** October 2026
+
+---
+
+## 🔍 Overview & Ecosystem Analysis
+
+This repository tracks production-grade **Managed Relational Databases (RDBMS)**, covering **DBaaS (Database-as-a-Service)**, **Serverless SQL**, **Cloud-Native Databases**, and **Distributed SQL Engines**. These solutions empower backend engineers, platform teams, database administrators (DBAs), and cloud architects to run scalable, highly available SQL databases without managing physical servers, manual backups, or complex replication topologies.
+
+### 📈 Market Size & Industry Dynamics
+
+- 📊 **Estimated Market Size:** The global managed relational database market is valued at **~$30 Billion in 2026** and is projected to expand toward **~$70 Billion by 2032**, driven by cloud migration, serverless database adoption, and real-time analytical workloads.
+- 🏢 **Market Concentration & Structure:** The sector is **moderately concentrated at the top tier** (dominated by hyperscalers like AWS RDS, Azure SQL, and Google Cloud SQL), but **highly fragmented in the emerging serverless and distributed SQL segments**. Rather than a single "winner-take-all" monopoly, specialized platforms (e.g., Supabase, Neon, PlanetScale, CockroachDB) successfully capture high-growth niches by offering instant branching, separation of compute and storage, and global multi-region consistency.
+
+---
+
+## 📖 Table of Contents
+
+- [☁️ SaaS / Hosted Platforms](#️-saas--hosted-platforms)
+- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [⚠️ Disclaimer](#️-disclaimer)
+- [📈 Star History](#-star-history)
+
+---
+
+## ☁️ SaaS / Hosted Platforms
+
+Below is a comparative breakdown of top commercial DBaaS and managed cloud relational database services:
+
+| 🏢 Platform | 📝 Description | 💰 Pricing (Starting Tier) | 🎁 Free Tier / Trial Limits | 📊 Company Size (Revenue / Valuation) |
+| :--- | :--- | :--- | :--- | :--- |
+| **🟧 Amazon RDS** | AWS's managed relational database service supporting PostgreSQL, MySQL, MariaDB, Oracle, SQL Server, and Db2. | 💵 `db.t4g.micro` starting at ~$12/month | 🎁 750 hours/month of `db.t2.micro`/`db.t3.micro` for 12 months (AWS Free Tier) | 🏢 ~$638B revenue (Amazon FY2025) |
+| **⚡ Amazon Aurora** | AWS's cloud-native high-performance relational database compatible with PostgreSQL and MySQL. | 💵 `db.t4g.medium` starting at ~$59.86/month; Serverless v2 at $0.12/ACU-hour | 🎁 Aurora PostgreSQL 750 hours/month for 12 months on AWS Free Tier | 🏢 ~$638B revenue (Amazon FY2025) |
+| **🔴 Google Cloud SQL** | Google's managed MySQL, PostgreSQL, and SQL Server with automatic backups, failover, and high availability. | 💵 `db-f1-micro` starting at ~$9/month | 🎁 $300 credit valid for 90 days (Google Cloud Free Trial) | 🏢 ~$350B revenue (Alphabet FY2025) |
+| **🔵 Microsoft Azure SQL Database** | Microsoft's managed SQL Server engine offering serverless, DTU, and vCore purchasing models. | 💵 Basic tier starting at ~$5/month | 🎁 $200 credit for 30 days + 12 months of select free services (Azure Free Account) | 🏢 ~$281B revenue (Microsoft FY2025) |
+| **🪳 CockroachDB Cloud** | Distributed SQL database with PostgreSQL wire compatibility and Spanner-inspired multi-region architecture. | 💵 Serverless pay-per-request starting at $0.10/10M Request Units + $0.25/GiB-month | 🎁 30-day free trial or existing legacy free tiers ($5/mo free credit) | 💎 ~$5B valuation ($633M raised) |
+| **💚 Neon** | Serverless PostgreSQL platform featuring separated storage and compute, instant schema branching, and scale-to-zero. | 💵 Launch plan starting at $0.106/CU-hour ($5/month minimum) | 🎁 100 CU-hours/month, 0.5 GB storage per project | 📈 Part of Databricks (~$3.5B revenue est.) |
+| **⚡ Supabase** | Open-source Firebase alternative providing managed PostgreSQL, Auth, Edge Functions, Vector search, and Realtime. | 💵 Pro plan starting at $25/month | 🎁 2 active projects, 500 MB database storage, 50k MAU | 💎 Private (~$2B valuation est.) |
+| **🦀 Aiven** | Fully managed open-source database services across multi-cloud providers including PostgreSQL, MySQL, and Redis. | 💵 Developer tier starting at ~$19/month | 🎁 30-day free trial with $100 credits | 💎 Private (~$500M+ valuation est.) |
+| **🚀 PlanetScale** | Serverless MySQL-compatible database platform built on Apache Vitess featuring non-blocking schema branching. | 💵 Scaler Pro plan starting at $39/month | 🎁 14-day free trial available | 💎 $105M raised ($3.9M revenue est.) |
+| **⏰ Timescale Cloud** | Cloud PostgreSQL database optimized for time-series analytics, IoT metrics, financial data, and vector search. | 💵 Starting at $30/month for compute/storage instance | 🎁 30-day free trial with $300 credits | 💎 Private (Timescale, ~$100M+ valuation est.) |
+
+---
+
+## 🔓 Open-Source GitHub Projects
+
+Curated open-source relational database management systems (RDBMS) sorted descending by GitHub star count:
+
+| 📦 Repo | 📝 Description | ⭐ Stars |
+| :--- | :--- | :--- |
+| **[🐘 PostgreSQL](https://github.com/postgres/postgres)** | The world's most advanced open-source relational database. BSD license. ACID-compliant with MVCC and extensibility. | [<img src="https://img.shields.io/github/stars/postgres/postgres?style=social&color=white" alt="PostgreSQL Stars"/>](https://github.com/postgres/postgres/stargazers) |
+| **[🐼 TiDB](https://github.com/pingcap/tidb)** | Open-source distributed HTAP database. MySQL-compatible with horizontal scaling and real-time transactional analytics. | [<img src="https://img.shields.io/github/stars/pingcap/tidb?style=social&color=white" alt="TiDB Stars"/>](https://github.com/pingcap/tidb/stargazers) |
+| **[🪳 CockroachDB](https://github.com/cockroachdb/cockroach)** | Distributed SQL database with PostgreSQL wire compatibility, resilience, and horizontal scaling. | [<img src="https://img.shields.io/github/stars/cockroachdb/cockroach?style=social&color=white" alt="CockroachDB Stars"/>](https://github.com/cockroachdb/cockroach/stargazers) |
+| **[🐘 YugabyteDB](https://github.com/yugabyte/yugabyte-db)** | High-performance distributed SQL database compatible with PostgreSQL. Built for cloud-native apps. | [<img src="https://img.shields.io/github/stars/yugabyte/yugabyte-db?style=social&color=white" alt="YugabyteDB Stars"/>](https://github.com/yugabyte/yugabyte-db/stargazers) |
+| **[🐬 MySQL](https://github.com/mysql/mysql-server)** | The world's most popular open-source relational database. Powers global web infrastructure and enterprise applications. | [<img src="https://img.shields.io/github/stars/mysql/mysql-server?style=social&color=white" alt="MySQL Stars"/>](https://github.com/mysql/mysql-server/stargazers) |
+| **[🪶 SQLite](https://github.com/sqlite/sqlite)** | Lightweight, zero-configuration, self-contained embedded relational database engine deployed billions of times. | [<img src="https://img.shields.io/github/stars/sqlite/sqlite?style=social&color=white" alt="SQLite Stars"/>](https://github.com/sqlite/sqlite/stargazers) |
+| **[🦭 MariaDB](https://github.com/MariaDB/server)** | Community-driven fork of MySQL. Drop-in replacement featuring performance enhancements and storage engines. | [<img src="https://img.shields.io/github/stars/MariaDB/server?style=social&color=white" alt="MariaDB Stars"/>](https://github.com/MariaDB/server/stargazers) |
+| **[🧱 openGauss](https://github.com/opengauss-mirror/openGauss-server)** | High-performance open-source enterprise relational database engine optimized for high-concurrency workloads. | [<img src="https://img.shields.io/github/stars/opengauss-mirror/openGauss-server?style=social&color=white" alt="openGauss Stars"/>](https://github.com/opengauss-mirror/openGauss-server/stargazers) |
+| **[⚡ rqlite](https://github.com/rqlite/rqlite)** | Lightweight, distributed relational database built on Raft consensus and SQLite engine. | [<img src="https://img.shields.io/github/stars/rqlite/rqlite?style=social&color=white" alt="rqlite Stars"/>](https://github.com/rqlite/rqlite/stargazers) |
+| **[🔥 Firebird](https://github.com/FirebirdSQL/firebird)** | Enterprise-grade open-source RDBMS offering lightweight resource footprint and high concurrency. | [<img src="https://img.shields.io/github/stars/FirebirdSQL/firebird?style=social&color=white" alt="Firebird Stars"/>](https://github.com/FirebirdSQL/firebird/stargazers) |
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are welcome! Please follow these steps to add new managed database platforms or open-source SQL projects:
+
+1. 🍴 Fork the repository.
+2. ✏️ Update `README.md` following the exact table structure and badge format.
+3. 📥 Submit a Pull Request (PR) with a clear summary of changes.
+
+---
+
+## 💖 Support & Sponsorship
+
+Thank you for exploring **Awesome Managed Relational Database**! If you find this curated list helpful for your database research, backend stack evaluation, or cloud architecture planning, please consider supporting the project:
+
+- ⭐ **Star this repository** to help others discover it!
+- 🔀 **Fork & Share** it with your fellow engineers, DBAs, and developer communities.
+- ☕ **Buy me a coffee / Sponsor:** If you'd like to support ongoing open-source curation and maintenance, feel free to sponsor via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## ⚠️ Disclaimer
+
+🔒 This repository is a community-curated list for informational and educational purposes only. It does not constitute commercial endorsement. Managed relational database services process critical application data; always verify security features, data residency, encryption standard compliance, and backup protocols before production deployment.
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Managed-Relational-Database&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Managed-Relational-Database&type=date&legend=top-left)
