@@ -62,9 +62,9 @@ Below is a comparative breakdown of top commercial DBaaS and managed cloud relat
 
 ## 🔓 Open-Source GitHub Projects
 
-Curated open-source relational database management systems (RDBMS) sorted descending by GitHub star count:
+Curated open-source relational database management systems (RDBMS) sorted descending by GitHub Stars_Count:
 
-| 📦 Repo | 📝 Description | ⭐ Stars |
+| 📦 Repo | 📝 Description | ⭐ GitHub_Stars |
 | :--- | :--- | :--- |
 | **[🐘 PostgreSQL](https://github.com/postgres/postgres)** | The world's most advanced open-source relational database. BSD license. ACID-compliant with MVCC and extensibility. | [<img src="https://img.shields.io/github/stars/postgres/postgres?style=social&color=white" alt="PostgreSQL Stars"/>](https://github.com/postgres/postgres/stargazers) |
 | **[🐼 TiDB](https://github.com/pingcap/tidb)** | Open-source distributed HTAP database. MySQL-compatible with horizontal scaling and real-time transactional analytics. | [<img src="https://img.shields.io/github/stars/pingcap/tidb?style=social&color=white" alt="TiDB Stars"/>](https://github.com/pingcap/tidb/stargazers) |
